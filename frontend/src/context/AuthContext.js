@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect } from 'react';
 
 export const AuthContext = createContext();
-
+/*
 const getStoredUser = () => {
   if (typeof window === 'undefined') return null;
 
@@ -12,10 +12,10 @@ const getStoredUser = () => {
     console.error('Failed to read saved user:', error);
     return null;
   }
-};
+};*/
 
 export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(getStoredUser);
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     if (user) {
