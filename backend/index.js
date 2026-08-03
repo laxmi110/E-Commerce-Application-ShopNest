@@ -17,7 +17,7 @@ app.use(express.urlencoded({extended: true}))
 app.use('/api/auth', require('./routes/authrotes'));
 app.use("/api/products",require('./routes/productRoutes'))
 app.use("/api/order",require('./routes/orderRoutes'))
-app.use("/api/analytics",require('./routes/analyticsRoutes'))
+app.use("/api/analytics",require('./routes/analyticsroutes'))
 
 // Serve frontend in production
 if (process.env.NODE_ENV === 'production') {
